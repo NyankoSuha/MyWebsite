@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anis Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<script src = "https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+
+<style>
+table {
+	position: absolute;
+	width: 800px;
+	margin: auto;
+	table-layout: fixed;
+	text-align: center;
+	margin-top: -50px;
+	font-family: Arial;
+	color: #fff;
+}
+table, th, td{
+    border: 1px dotted white;
+	border-collapse: collapse;
+	padding: 10px;
+	font-size: 20px;
+}
+th{
+    background: green;
+	padding: 30px;
+	text-transform: uppercase;
+</style>
+<body>
+	
+	<header>
+	     <h2 class = "logo">My Portfolio</h2>
+		 <nav class = "navigation">
+		     <a href = "#" class="active">Home</a>
+			 <a href = "#about">About</a>
+			 <a href = "#msg">Message</a>
+			 <a href = "music.html">Music Gallery</a>
+			 <a href = "contact.html">Contact</a>
+			 <a href = "BMI.html">Calculate BMI</a>
+		 </nav>
+	</header>
+	
+	<section class="profile">
+		 <img src= "hill1.png" id= "hill1">
+		 <img src= "hill2.png" id= "hill2">
+		 
+		 <img src= "hill3.png" id= "hill3">
+		 <img src= "hill4.png" id= "hill4">
+		 <img src= "hill5.png" id= "hill5">
+		 <img src= "tree.png" id= "tree">
+		 <h2 id="text">Welcome To My Profile</h2>
+		 <img src= "leaf.png" id= "leaf">
+		 <img src= "plant.png" id= "plant">
+	</section>
+	
+	<section class="dance">
+		 <img src= "dance.gif" id= "dance" width="250">
+	</section>
+	
+	<section class="dance1">
+		 <img src= "dance1.gif" id= "dance" width="250">
+	</section>
+	
+	<section class="dance2">
+		 <img src= "dance2.webp" id= "dance" width="250">
+	</section>
+	
+	
+	<section class= "sec" id="about">
+		<section class="moon">
+			<img src= "moon.png" id= "moons">
+		</section>
+		<img src= "scenary1.png" id= "house">
+		
+		<h2>Hello! 
+		I'm Anis.</h2>
+		<p>
+		<table>
+			 <tr>
+		    <th> Name</th>
+			<th>Address</th>
+			<th>Hobbies</th>
+			<th> Favourite Movies</th>
+		</tr>
+		<tr>
+		    <td> Anis Madihah Binti Zakiman </td>
+			<td>Shah Alam </td>
+			<td> Playing Games and Watching Anime</td>
+			<td><a href = "https://youtu.be/_r1uJkjczKk?si=5BFXqp7nxusAhykY">Silent Voice</a></td>
+		</tr> 
+		</table> 
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		</p>
+	</section>	
+	
+	<div class="msg" id ="msg">
+	<img src= "cave.png" id= "cave">
+		<form>
+			<div class="id">
+				<br>
+				<h1>Get in Touch</h1>
+				<div class="forms">
+					<input type="text" placeholder="Full name" required>
+					<u class="far fa-user"></u>
+				</div>
+				<div class ="forms">
+					<input type=email" placeholder="Email address" required>
+					<i class="far fa-envelope"></i>
+				</div>
+					<textarea cols="15" rows="5" placeholder="Enter your message here.." required></textarea>
+					<br>
+					<button>Send</button>
+			</div>
+		</form>
+	</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 0 / 50%),
+    rgb(0 0 255 / 50%) 
+	), url("forest2.jpg");
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: flex start;
+	align-items: center;
+	z-index: 100;
+	background: #000000;
+	background-color: rgba(0, 0, 0, 0.9);
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+
+.logo {
+	font-size: 2em;
+	color: #ffff;
+	pointer-events: none;
+	margin-right: 490px;
+}	
+
+.navigation a {
+	text-decoration: none;
+	color: #ffff;
+	padding: 6px 15px;
+	border-radius: 20px;
+	margin: 0 10px;
+	font-weight: 600;
+}
+
+.navigation a:hover, .navigation a.active {
+	background: #359381;
+	color: #fff;
+}
+
+
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.card{
+  background: #000;
+  opacity: 0.6;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #008000;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
